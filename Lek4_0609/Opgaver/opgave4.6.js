@@ -21,6 +21,7 @@ for (let mountain of MOUNTAINS) {
     let tdHeight = document.createElement('td');
     tdHeight.textContent = mountain.height;
     tdHeight.style.border = "0.3em solid blue";
+    tdHeight.style.textAlign = "right";
     let tdPlace = document.createElement('td');
     tdPlace.textContent = mountain.place;
     tdPlace.style.border = "0.3em solid blue";
