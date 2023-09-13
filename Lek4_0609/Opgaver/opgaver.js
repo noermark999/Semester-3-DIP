@@ -23,6 +23,15 @@ for (let element of overskriftNode) {
     newNode.textContent = prevTekst;
     parent.replaceChild(newNode, prev);
 }
+/*      Anden løsning til ovenstående
+    for (let e of document.querySelectorAll('h1 + p')) {
+        let h2Node = document.createElement('h2');
+        e.parentNode.replaceChild(h2Node, e);
+    }
+*/
+
+
+
 
 let overskriftId = 0;
 
