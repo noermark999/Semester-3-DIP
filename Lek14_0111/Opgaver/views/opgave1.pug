@@ -1,0 +1,16 @@
+include includes/header
+
+body
+    #eqs
+        table
+            tr 
+                th Location 
+                th Magnitude 
+                th Time 
+            each eq in eqs 
+                tr 
+                    td= eq.place
+                    td= eq.mag 
+                    td= eq.time 
+
+include includes/footer

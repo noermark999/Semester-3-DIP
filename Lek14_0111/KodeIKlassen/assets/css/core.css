@@ -1,0 +1,16 @@
+h1 {
+    color: brown;
+}
+
+div#cats {
+    background-color: beige;
+}
+
+div#cats ul {
+    list-style-type: none;
+}
+
+div#cats img {
+    width: 200px;
+    height: 140px;
+}

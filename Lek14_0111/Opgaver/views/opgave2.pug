@@ -1,0 +1,21 @@
+html
+    head 
+        title Lær PUG 
+        link(rel = 'stylesheet' href='/css/opgave2.css')
+body
+    #people
+        table
+            tr 
+                th Name 
+                th Age 
+                th Picture 
+                th Nationality
+            each person in people 
+                tr 
+                    td= person.name.first + " " + person.name.last
+                    td= person.dob.age
+                    td 
+                        img(src=person.picture.large)
+                    td= person.nat
+
+include includes/footer
