@@ -1,0 +1,8 @@
+html 
+  head 
+    title= Bilen 
+    script(src='/js/core.js' defer)
+  body 
+    h2= car.brand 
+    p= car.model
+    button(onclick=`deleteCar('${car.docID}')`) DELETE

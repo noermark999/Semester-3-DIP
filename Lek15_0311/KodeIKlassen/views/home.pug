@@ -1,0 +1,13 @@
+html 
+    head 
+        meta(charset="UTF-8")
+        title Min fede loginwebsie 
+        link(rel="stylesheet", href="/css/core.css")
+
+    body 
+        include includes/menubar
+        p vores sager - dette er forsiden 
+        if !knownUser
+            include includes/loginForm
+        else 
+            p Hej!, og velkommen tilbage. Du er logget ind    
