@@ -1,0 +1,14 @@
+html 
+  head 
+    title Rediger bil 
+    script(src='/js/core.js' defer)
+    link(rel="stylesheet", href="/css/core.css")
+
+  body 
+    h1 Rediger ny bil #{car.brand} #{car.model}
+    input(type="text" name="brand" value= car.brand)
+    br
+    input(type="text" name="model" value= car.model)
+    br
+    button(onclick=`editCar('${car.docID}')`) EDIT
+

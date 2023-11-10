@@ -2,7 +2,10 @@ html
   head 
     title= Bilen 
     script(src='/js/core.js' defer)
+    link(rel="stylesheet", href="/css/core.css")
+
   body 
     h2= car.brand 
     p= car.model
     button(onclick=`deleteCar('${car.docID}')`) DELETE
+    button(onclick=`window.location=('/editCar/${car.docID}')`) EDIT 
